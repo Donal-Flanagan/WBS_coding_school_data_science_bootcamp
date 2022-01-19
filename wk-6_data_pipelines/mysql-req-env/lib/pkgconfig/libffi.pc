@@ -1,0 +1,11 @@
+prefix=/home/donal/WBS_coding_school_data_science_bootcamp/wk-6_data_pipelines/mysql-req-env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/home/donal/WBS_coding_school_data_science_bootcamp/wk-6_data_pipelines/mysql-req-env/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.4.2
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

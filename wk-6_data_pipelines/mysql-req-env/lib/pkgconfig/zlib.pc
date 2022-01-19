@@ -1,0 +1,13 @@
+prefix=/home/donal/WBS_coding_school_data_science_bootcamp/wk-6_data_pipelines/mysql-req-env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.11
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

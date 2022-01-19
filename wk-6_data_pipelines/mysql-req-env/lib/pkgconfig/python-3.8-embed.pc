@@ -1,0 +1,13 @@
+# See: man pkg-config
+prefix=/home/donal/WBS_coding_school_data_science_bootcamp/wk-6_data_pipelines/mysql-req-env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Python
+Description: Embed Python into an application
+Requires:
+Version: 3.8
+Libs.private: -lcrypt -lpthread -ldl  -lutil -lrt -lm
+Libs: -L${libdir} -lpython3.8
+Cflags: -I${includedir}/python3.8

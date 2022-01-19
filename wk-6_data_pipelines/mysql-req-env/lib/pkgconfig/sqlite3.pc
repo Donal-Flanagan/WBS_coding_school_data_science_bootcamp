@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/donal/WBS_coding_school_data_science_bootcamp/wk-6_data_pipelines/mysql-req-env
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.37.0
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lz -lm -ldl -lpthread 
+Cflags: -I${includedir}
