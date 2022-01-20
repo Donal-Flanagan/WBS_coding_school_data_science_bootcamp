@@ -6,3 +6,5 @@ __pycache__
 sql_interview_challenge_1
 sql_interview_challenge_2
 imdb_db_dump.sql
+api_keys.py
+config.py
