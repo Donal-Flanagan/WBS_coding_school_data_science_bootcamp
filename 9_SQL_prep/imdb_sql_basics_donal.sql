@@ -20,7 +20,6 @@ from movies;
 -- EXPLORING THE MOVIES
 
 -- From what year are the oldest and the newest movies? What are the names of those movies?
-
 select name, year
 from movies
 where year = (
@@ -301,18 +300,6 @@ limit 5;
 -- 'Documentary', '41356'
 -- 'Animation', '17652'
 
-RANK() OVER (ORDER BY COUNT(movie_id) DESC) ranking, genre, COUNT(movie_id) total
-FROM movies_genres
-GROUP BY genre
-ORDER BY 1;
-    
-WITH cte AS (
-	SELECT 
-)
-SELECT ranking, genre, total
-FROM cte
-WHERE ranking <= 5;
-
 
 -- What are the top 5 movie genres before 1920?
 select genre, count(genre) as movies_per_genre
@@ -426,8 +413,6 @@ from (
 where female_actors_per_film.movie_id = male_actors_per_film.movie_id;
     
 
-
-
 -- absolute
 with female_actors_per_film as (
 	select r.movie_id as movie_id_f, count(a.id) as female_actors
@@ -456,7 +441,7 @@ from actor_counts_per_film
 where female_actors > male_actors;
 -- 31739 films have more female actors than male
 
--- relative
+-- Calculate total films to check relative values
 with female_actors_per_film as (
 	select r.movie_id as movie_id_f, count(a.id) as female_actors
 	from movies m
@@ -483,6 +468,7 @@ select count(*)
 from actor_counts_per_film;
 -- 234374
 
+-- relative
 with female_actors_per_film as (
 	select r.movie_id as movie_id_f, count(a.id) as female_actors
 	from movies m
