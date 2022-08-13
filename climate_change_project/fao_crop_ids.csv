@@ -1,0 +1,39 @@
+,crop_id,crop,unit
+1,103,Grain,hg/ha
+2,108,Cereals,hg/ha
+3,116,Potatoes,hg/ha
+4,122,Sweet potatoes,hg/ha
+5,125,Cassava,hg/ha
+8,137,Yams,hg/ha
+10,15,Wheat,hg/ha
+11,156,Sugar cane,hg/ha
+12,157,Sugar beet,hg/ha
+16,1726,Pulses,hg/ha
+19,1735,Vegetables Primary,hg/ha
+37,236,Soybeans,hg/ha
+38,242,Groundnuts,hg/ha
+43,265,Castor oil seed,hg/ha
+44,267,Sunflower seed,hg/ha
+45,27,Rice,hg/ha
+46,270,Rapeseed,hg/ha
+49,280,Safflower seed,hg/ha
+50,289,Sesame seed,hg/ha
+58,336,Hempseed,hg/ha
+60,358,Cabbages and other brassicas,hg/ha
+64,373,Spinach,hg/ha
+66,388,Tomatoes,hg/ha
+67,393,Cauliflowers and broccoli,hg/ha
+72,402,Onions,hg/ha
+73,406,Garlic,hg/ha
+75,420,Vegetables,hg/ha
+79,44,Barley,hg/ha
+80,446,Maize,hg/ha
+84,486,Bananas,hg/ha
+127,71,Rye,hg/ha
+128,711,Anise,hg/ha
+132,75,Oats,hg/ha
+134,773,Flax fibre and tow,hg/ha
+136,780,Jute,hg/ha
+140,79,Millet,hg/ha
+144,826,Tobacco,hg/ha
+145,83,Sorghum,hg/ha
